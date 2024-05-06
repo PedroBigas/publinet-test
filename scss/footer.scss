@@ -1,0 +1,157 @@
+.footer-area {
+    background: #f3f3f3;
+    padding: 65px 0 0;
+
+    .footer-top {
+        border-bottom: 1px solid #ccc;
+
+        .single-footer-caption {
+        
+            @media (max-width: 991px){
+                margin-bottom: 40px;
+            }
+             
+            .footer-logo {
+                position: relative;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+
+                img{
+                    height: 90px;
+                    object-fit: contain;
+                }
+            }
+
+            .footer-tittle {
+                & span {
+                    color: $color3;
+                    font-family: $font_2;
+                    font-size: 18px;
+                    margin-bottom: 38px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+
+                & ul {
+                    & li {
+                        color: #000;
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+
+                        & a {
+                            color: #868c98;
+                            font-weight: 300;
+                            transition: .4s ease;
+
+                            &:hover {
+                                color: $color;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .distribuidor-logo{
+                img{
+                    height: 40px;
+                    object-fit: contain;
+                    object-position: left;
+
+                    @media (max-width:991px){
+                        object-position: center;
+                    }
+                }
+            }
+
+            .footer-cap {
+                margin-bottom: 30px;
+
+                a {
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                    display: block;
+                    transition: .4s ease;
+
+                    &:hover {
+                        color: $color;
+                        padding-left: 5px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-bottom: 20px;
+        padding-top: 30px;
+
+        img{
+            filter: brightness(0);
+            width: 125px;
+            height: 52px;
+        }
+
+        .footer-copy-right {
+            & p {
+                color: #000;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 2;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.social_links {
+    margin: 25px 0;
+
+    @media (max-width: 991px) {
+        margin: 30px 0 40px;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 18px;
+                color: #C3B2F0;
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                text-align: center;
+                background: $color2;
+                border-radius: 50%;
+                line-height: 40px !important;
+                margin-right: 7px;
+                color: #fff;
+                line-height: 41px !important;
+                transition: .4s ease;
+
+                &:hover {
+                    background: $color;
+                }
+            }
+        }
+    }
+}
+
+.mob-center {
+    @media #{$md} {
+        text-align: center;
+    }
+
+    @media #{$sm} {
+        text-align: center;
+    }
+
+    @media #{$xs} {
+        text-align: center;
+    }
+}
